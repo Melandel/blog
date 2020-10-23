@@ -1,0 +1,175 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	padding: 20px 0;
+	text-align: center;
+}
+
+#blog-logo {
+	max-width: 100%;
+	height: auto;
+	max-height: 200px;
+	width: auto;
+}
+
+#blog-title {
+	font-size: 1.75rem;
+	font-weight: 300;
+	font-family: "Open Sans",sans-serif;
+}
+
+#blog-subtitle {
+	margin: 12px 0 0 0;
+	font-size: 0.875rem;
+	font-weight: 300;
+	font-family: "Open Sans",sans-serif;
+}
+
+body {
+	color: #555;
+	font-family: -apple-system,BlinkMacSystemFont,YakuHanJP,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+	line-height: 1.57;
+}
+
+#main {
+	width: 96%;
+	max-width: 720px;
+	margin: 40px auto 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	font-family: "Open Sans",sans-serif;
+}
+
+h1 {
+	font-size: 1.75rem;
+}
+
+h2 {
+	font-size: 1.50rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+#main a {
+	color: #00c5cd;
+}
+
+#main > p:first-of-type {
+	padding-bottom: 2rem;
+}
+
+#main img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 800px;
+	width: auto;
+}
+
+#main th, td {
+	border-left: 1px solid #555;
+	border-top: 1px solid #555;
+	padding: 0px 8px;
+}
+
+#main table > tbody > tr:first-of-type {
+	text-align: center;
+	font-weight: bold;
+}
+
+#main table {
+	border: 1px solid #555;
+	border-radius: 6px;
+	border-collapse: separate;
+}
+
+#main table > tbody > tr:first-child > td {
+	border-top: none;
+}
+
+#main td:first-child, th:first-child {
+	border-left: none;
+}
+
+pre {
+	padding: 10px;
+}
+
+blockquote {
+	margin: 0;
+	padding: 0px 12px;
+	border-left: 3px solid #ccc;
+}
+
+article {
+	margin-bottom: 2rem;
+}
+article * {
+	margin: 0px;
+}
+article p {
+	color: #999;
+}
+article h2 a:hover {
+	text-decoration: underline;
+}
+
+.PageNavigation {
+	font-size: 14px;
+	display: block;
+	width: auto;
+	overflow: hidden;
+}
+
+.PageNavigation a {
+	color: #555! important;
+	text-decoration: underline;
+	display: inline-block;
+	margin: 1em 0;
+}
+
+.PageNavigation .prev {
+	float: left;
+}
+
+.PageNavigation .next {
+	float: right;
+}
+
+footer {
+	max-width: 720px;
+	margin: 40px auto 0;
+	text-align: center;
+	padding: 24px 0;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+#my-picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+}
+
+#my-description p {
+	margin: 0px;
+	text-align: left;
+	padding-left: 110px;
+}
