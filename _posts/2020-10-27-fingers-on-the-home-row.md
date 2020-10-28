@@ -59,7 +59,9 @@ You'll see:
 	* your own custom list of strings would work
 * I can also **customize the action triggered** on the currently selected item when I press `Enter`
 
-There are several fuzzy finders out there - I'm using [fzf](https://github.com/junegunn/fzf). I _highly_ recommand [this 14 minutes presentation](https://www.youtube.com/watch?v=qgG5Jhi_Els). It is very well constructed and basically changed my life for the best.
+There are several fuzzy finders out there - I'm using [fzf](https://github.com/junegunn/fzf). This video goes more into details with how you can use that amazing utility:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qgG5Jhi_Els" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Click-to-shortcut transformation
 Sometimes you have to stick with a visual representation of things (web browsers, for instance). In that case you can use something like [vimium - the hacker's browser](https://vimium.github.io/):
@@ -83,7 +85,7 @@ The truth is, keyboards suffer from some design issues...
 For this reason, I created the following **remappings** for myself using [autohotkey](https://www.autohotkey.com/) (Windows only):
 
 | Original key        | Mapped to...            |
-| =========           | ========                |
+| ---------           | --------                |
 | `Esc`               | `CapsLock` (pressed)    |
 | `Ctrl`              | `CapsLock`(held down)   |
 | `Enter`             | `CapsLock`+`m`          |
