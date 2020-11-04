@@ -25,7 +25,7 @@ Well, because if you are using a keyboard, you are [supposed](https://fossbytes.
 
 It is the first thing that [touch typists](https://en.wikipedia.org/wiki/Touch_typing#Advantages) (people who can type without looking at their keyboard) learn, followed by learning which finger should go to which key.
 
-![home row]({{ site.baseurl }}/assets/img/homerow2.jpg)
+[![home row]({{ site.baseurl }}/assets/img/homerow2.jpg)]({{ site.baseurl }}/assets/img/homerow2.jpg)
 
 When you use your keyboard that way, you'll notice that your fingers do all the work from muscle memory and your hands should almost not move.
 
@@ -48,11 +48,12 @@ A fuzzy finder is a program that takes a list of strings as input, and allows yo
 What's **fuzzy search** you ask?
 
 Here's a small showcase:
-![fuzzyfinder]({{ site.baseurl }}/assets/img/fuzzyfinder.gif)
+
+[![fuzzyfinder]({{ site.baseurl }}/assets/img/fuzzyfinder.gif)]({{ site.baseurl }}/assets/img/fuzzyfinder.gif)
 
 You'll see:
 * queries that I'm typing (`omnilang`, `omnilog`, `bujson` and `endex`)
-* elements **"matching"** my query, _i.e._ "the characters in the query appear _at some point_ in the item, _in the same order_
+* elements **"matching"** my query, _i.e._ "the characters in the query appear _at some point_ in the item, _in the same order"_
 * I'm using file paths in this particular example but it could be **any list of strings**
 	* git commits would work
 	* file templates would work
@@ -66,19 +67,20 @@ There are several fuzzy finders out there - I'm using [fzf](https://github.com/j
 ### Click-to-shortcut transformation
 Sometimes you have to stick with a visual representation of things (web browsers, for instance). In that case you can use something like [vimium - the hacker's browser](https://vimium.github.io/):
 
-![vimium]({{ site.baseurl }}/assets/img/vimium.png)
+[![vimium]({{ site.baseurl }}/assets/img/vimium.png)]({{ site.baseurl }}/assets/img/vimium.png)
 
 Pressing one key allows you to display all the links you could otherwise click on, and attach a shortcut that simulates a click.
 
 ### More basic things
 While the previous examples require some sort of program or script, other ways are out-of-the-box, such as global searching and good old autocompletion:
-![globalcommand]({{ site.baseurl }}/assets/img/globalcommand.gif)
+
+[![globalcommand]({{ site.baseurl }}/assets/img/globalcommand.gif)]({{ site.baseurl }}/assets/img/globalcommand.gif)
 
 &nbsp;
 
-## About the ergonomy of your keyboard...
+## About the ergonomics of your keyboard...
 The truth is, keyboards suffer from some design issues...
-* Some keys are placed very close to your fingers but rarely used (I'm looking at you, `Caps Lock` and `AltGr`). 
+* Some keys are placed very close to your fingers but rarely used (I'm looking at you, `Caps Lock`). 
 * Some are going to located at different places depending on the laptop or keyboard you're looking at (`Delete`, `Home`, `End`, `Up`/`Down`/`Left`/`Right`)
 * Some even have different shapes from a keyboard to another(`Enter`, anyone?).
 

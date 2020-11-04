@@ -16,32 +16,34 @@ Hi!
 &nbsp;
 
 
-I am a very visual person. I like displaying information under the shape of a diagram, typically.
+I am a very visual person. I understand information better when it is presented with a visual structure.
 
-Also, I like struggling on something the first time, then wing them starting with the second time.
+Also, I don't like losing time on something I already solved in the past.
 
-For these purposes, I have equipped myself accordingly.
+So I acted on that and adapted my workflow accordingly.
 
 ## Diagrams
-A lot of people I know don't like drawing diagrams: it requires a tool they don't use daily, hours of time thinking in a way they're not used to, producing value they don't always like to produce. In other words: producing a diagram is an _Event_.
+Drawing diagrams. We all admit their values. But. It requires a tool we aren't really used to, hours spent thinking in a way they're not used to either, and all that for producing value they don't always care to produce. In other words: producing a diagram is an _event_.
 
-However, I find that diagrams help me _understand_, they help me _think_, they help me _focus_. It's a visual trace for a certain structuration of pieces of information, which allows me to write it down and safely forget about it - until I read it next time.
+And like all _events_ (washing dishes, deploying your software to production, writing integration tests... cleaning your fridge?), if we did them more regularly, they would become _non-events_: something easy and quick to do, practical, and valuable.
 
-But if I was to fire up a new window or create a new tab in my web browser in order to use them, it wouldn't feel cost-efficient in terms of focus.
+I personally find that diagrams help me _understand_, they help me _think_, and they help me _focus_. To me, they are a way of taking notes with the whole "A picture is worth a thousand words" added value.
+
+But if I was to fire up a new window or create a new tab in my web browser in order to use them, it would just not be cost-efficient at all in terms of focus.
 
 So how do I do?
 
 The answer:
-* a text file
-* plantuml's cli interface
-* a keyboard mapping to trigger the diagram generation in the background
-* my web browser to display the diagram after it's generated.
+* [plantuml](https://plantuml.com/)'s cli interface
+* a text file representing a diagram
+* a keyboard mapping to trigger the diagram generation in the background as a png file
+* a web browser to display the diagram after it's generated.
 
-Tadaa!
+Let me show you.
 
 Diagram generation on-the-go from my text editor:
 
-![unittestplan]({{ site.baseurl }}/assets/img/unittestplan.png)
+[![unittestplan]({{ site.baseurl }}/assets/img/unittestplan.png)]({{ site.baseurl }}/assets/img/unittestplan.png)
 
 That image was generated from the following text file:
 ```
@@ -70,9 +72,9 @@ title ConvertTwoIntsToString: (int, int) => string
 'https://plantuml.com/fr/mindmap-diagram
 ```
 
-As you can see, I'm using it to generate a sort of checklist that helps me think more rigorously.
+As you can see, I'm using it to generate a sort of checklist that helps me think more rigorously (about unit tests, in this case)
 
-That being said, that text file looks long to write. I must have lost a lot of focus on the syntax!
+That being said, that text file looks long to write. I must have lost a lot of time/focus writing it!
 
 Or have I?
 
@@ -81,12 +83,13 @@ Snippets are a common way of generating text with placeholders for the parts you
 
 A gif is worth a thousand words.
 
-![unittestplantuml]({{ site.baseurl }}/assets/img/unittestplantuml.gif)
+[![unittestplantuml]({{ site.baseurl }}/assets/img/unittestplantuml.gif)]({{ site.baseurl }}/assets/img/unittestplantuml.gif)
 
+I'm designing at the same time as I'm writing. I basically use the snippet as a thinking assistant!
 
-However, how easy is it to create your own snippets?
+But how easy is it to create your own snippets?
 
-On Visual Studio, each snippet is a complete xml file with a heavy syntax, and getting to their location is quite painful:
+On Visual Studio, each snippet is a complete xml file with a heavy syntax, and getting to their location is quite painful. We are once again poking at the notion of _event_.
 
 ```xml
 <Snippet>
@@ -168,9 +171,9 @@ $OtherHappyPaths$
 </Snippet>
 ```
 
-That doesn't make you want to create snippets on Visual Studio, does it?
+That doesn't inspire you to create snippets on Visual Studio, does it?
 
-On the other hand, Vim's snippet plugin [UltiSnips](https://github.com/SirVer/ultisnips) lets you edit your snippets _much_ more easily:
+Vim's snippet plugin [UltiSnips](https://github.com/SirVer/ultisnips) lets you edit your snippets _much_ more easily:
 * one file contains all the snippets for each file type
 * you instantly access it from a keyboard mapping of your choice
 * the syntax is dead simple:
@@ -205,14 +208,16 @@ endsnippet
 
 Now, integrating snippet creation into your workflow sounds _manageable_, doesn't it?
 
+It suddenly became a _non-event_.
+
 Every time I compare Visual Studio's snippets with vim's (or vscode's) snippets, it reminds me that a **huge** part of the value of a tool is in its ability to go along with my workflow. In fact, had I stayed on Visual Studio, I would _never_ have thought of making my own snippets!
 
 ## Todolist & smaller commits
-Planning what I expect to be done in the current day is an important part of my day: it gives me a sense of direction, and boundaries to help me picking my trade-offs between thinking and producing.
+For me, **planning** what I expect to be **done** at the end of the day is an important part it: it gives me a sense of direction, and boundaries to help me chose my trade-offs between thinking and producing.
 
 Additionally, I like to measure my productivity through my commits.
 
-**Commits are value.**
+From my perspective, **Commits are value.**
 
 For that reason, I want to commit as soon as I made a change in the code source that compiles and passes the unit tests.
 
@@ -224,15 +229,18 @@ This is my commit workflow:
 | **2**   | Compile                          |
 | **3**   | If Compilation was OK, Run tests |
 | **4**   | If Test Runs were OK, Commit     |
-| **...** | Go back to step 1                |
+| **...** | Rinse and repeat                 |
 
-I used to keep in mind to commit often - but I usually forgot, overwhelmed by the incentive to move on.
+I used to try tokeep in mind to commit more often. However, oftentimes I would forget, inspired by the incentive to move on.
 
-For that reason, I made so that every time I build the solution, it automatically runs the tests and displays the commit screen if everything was green. Why bother remembering the procedure when the procedure is in the tool?
+For that reason, I made it so that every time my solution is building, it automatically runs the tests afterwards and then displays a "commit screen" if everything was green.
 
-![dashboard]({{ site.baseurl }}/assets/img/dashboard.png)
+That way, my workflow commands my habits and I don't rely on my fallible sense of discipline anymore.
 
-This is my "dashboard" screen inside vim. You can see an interactive `git status` output provided by vim's `vim-fugitive` plugin on the top split, some space for displaying file diffs, and three plain files:
+Below, my "dashboard" screen inside vim.
+[![dashboard]({{ site.baseurl }}/assets/img/dashboard.png)]({{ site.baseurl }}/assets/img/dashboard.png)
+
+You can see at the top an interactive `git status` split (provided by vim's excellent `vim-fugitive` plugin), some space for displaying file diffs, then three plain files:
 
 | File             | Description                     |
 | --               | --------                        |
@@ -240,13 +248,15 @@ This is my "dashboard" screen inside vim. You can see an interactive `git status
 | **done**         | things I've done recently       |
 | **achievements** | things I should feel good about |
 
-I would then commit my changes, update my todolist, and feel well for making progress in the right direction.
+I would use that screen to commit my changes, update my todolist, and acknowledge that I made progress.
 
-I personally link a dark background to work, but I like a bit more colors for celebration. For that reason, I took the liberty to make an HTML generator from the content of these files:
+Moving things on my todo list should always be a moment of celebration. However, celebrating cannot be all black and white. Celebration means colors, joy and wellness! For that precise reason, I build a HTML file from the content of these files and display it in my web browser:
 
-![dashboardhtml]({{ site.baseurl }}/assets/img/dashboardhtml.png)
+[![dashboardhtml]({{ site.baseurl }}/assets/img/dashboardhtml.png)]({{ site.baseurl }}/assets/img/dashboardhtml.png)
 
-And that's how I turned each commit into a small celebration!
+Looking great!
+
+And that's how I turned each commit into a small celebration. Small, but important!
 
 ```
 :smile

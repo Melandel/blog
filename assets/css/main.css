@@ -125,6 +125,19 @@ a {
 	border-radius: 0 0 0 4px;
 }
 
+#main details {
+	display: inline-block;
+	background: khaki;
+	padding: 8px;
+}
+#main details>summary {
+	font-weight:bold;
+	font-style:italic;
+}
+#main details>p {
+	font-weight:bold;
+}
+
 pre {
 	padding: 10px;
 }
