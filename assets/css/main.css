@@ -202,6 +202,12 @@ footer {
 	float: left;
 }
 
+#my-contact {
+	color: initial;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
 #my-description p {
 	margin: 0px;
 	text-align: left;
