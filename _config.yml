@@ -1,3 +1,5 @@
 url: "https://melandel.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 title: "Journey of an aspiring software craftsman" # the name of your site, e.g. ACME Corp.
+github: [metadata]
+repository: Melandel/blog
